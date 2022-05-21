@@ -20,6 +20,10 @@ namespace market_automation
         private void gunaGradientTileButton1_Click(object sender, EventArgs e)
         {
             gunaAdvenceTileButton1.Visible = true;
+            gunaAdvenceTileButton2.Visible = true;
+            gunaAdvenceTileButton3.Visible = true;
+            gunaAdvenceTileButton4.Visible = true;
+         //
 
             gunaAdvenceTileButton1.Image = System.Drawing.Image.FromFile(@"C:\Users\yigit\source\repos\market_automation\market_automation\icons\drinks_menu\water_32px.png");
             gunaAdvenceTileButton2.Image = System.Drawing.Image.FromFile(@"C:\Users\yigit\source\repos\market_automation\market_automation\icons\drinks_menu\cola_50px.png");
