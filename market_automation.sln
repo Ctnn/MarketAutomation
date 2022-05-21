@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "market_automation", "market_automation\market_automation.csproj", "{EEEA40E2-C76C-4961-AD77-C2B4D9CA4CC2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEEA40E2-C76C-4961-AD77-C2B4D9CA4CC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEEA40E2-C76C-4961-AD77-C2B4D9CA4CC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEEA40E2-C76C-4961-AD77-C2B4D9CA4CC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEEA40E2-C76C-4961-AD77-C2B4D9CA4CC2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {43F9AFEF-9F4D-4EF2-806E-698DBFB474A6}
+	EndGlobalSection
+EndGlobal
