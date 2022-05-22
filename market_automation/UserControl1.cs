@@ -43,6 +43,32 @@ namespace market_automation
                 gunaLabel1.Text = value;
             }
         }
+        public string pricetag
+        {
+            get
+            {
+                return gunaLabel3.Text.ToString();
+
+            }
+
+            set
+            {
+                gunaLabel3.Text = value;
+            }
+        }
+    /*    public string pathtag
+        {
+            get
+            {
+                return gunaLabel3.Text.ToString();
+
+            }
+
+            set
+            {
+                gunaLabel3.Text = value;
+            }
+        }*/
         private void gunaLinePanel1_Paint(object sender, PaintEventArgs e)
         {
 

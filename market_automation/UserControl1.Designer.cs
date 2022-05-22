@@ -35,6 +35,7 @@
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLinePanel1 = new Guna.UI.WinForms.GunaLinePanel();
             this.gunaGradientButton1 = new Guna.UI.WinForms.GunaGradientButton();
+            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaGradient2Panel1.SuspendLayout();
             this.gunaShadowPanel1.SuspendLayout();
             this.gunaLinePanel1.SuspendLayout();
@@ -43,24 +44,25 @@
             // gunaGradient2Panel1
             // 
             this.gunaGradient2Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaGradient2Panel1.Controls.Add(this.gunaLabel3);
             this.gunaGradient2Panel1.Controls.Add(this.gunaLabel2);
             this.gunaGradient2Panel1.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(130)))), ((int)(((byte)(68)))));
             this.gunaGradient2Panel1.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(72)))), ((int)(((byte)(115)))));
             this.gunaGradient2Panel1.Location = new System.Drawing.Point(12, 3);
             this.gunaGradient2Panel1.Name = "gunaGradient2Panel1";
             this.gunaGradient2Panel1.Radius = 3;
-            this.gunaGradient2Panel1.Size = new System.Drawing.Size(52, 24);
+            this.gunaGradient2Panel1.Size = new System.Drawing.Size(66, 24);
             this.gunaGradient2Panel1.TabIndex = 0;
             // 
             // gunaLabel2
             // 
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.Location = new System.Drawing.Point(6, 6);
+            this.gunaLabel2.Location = new System.Drawing.Point(3, 4);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(21, 15);
+            this.gunaLabel2.Size = new System.Drawing.Size(14, 15);
             this.gunaLabel2.TabIndex = 1;
-            this.gunaLabel2.Text = "$1";
+            this.gunaLabel2.Text = "$";
             // 
             // gunaShadowPanel1
             // 
@@ -132,6 +134,16 @@
             this.gunaGradientButton1.TabIndex = 0;
             this.gunaGradientButton1.Visible = false;
             // 
+            // gunaLabel3
+            // 
+            this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel3.Location = new System.Drawing.Point(16, 3);
+            this.gunaLabel3.Name = "gunaLabel3";
+            this.gunaLabel3.Size = new System.Drawing.Size(14, 15);
+            this.gunaLabel3.TabIndex = 2;
+            this.gunaLabel3.Text = "1";
+            // 
             // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -162,5 +174,6 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaLinePanel gunaLinePanel1;
         private Guna.UI.WinForms.GunaGradientButton gunaGradientButton1;
+        private Guna.UI.WinForms.GunaLabel gunaLabel3;
     }
 }

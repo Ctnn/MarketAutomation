@@ -49,10 +49,6 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.userControl21 = new market_automation.UserControl2();
-            this.userControl22 = new market_automation.UserControl2();
-            this.userControl23 = new market_automation.UserControl2();
-            this.userControl24 = new market_automation.UserControl2();
             this.gunaGradient2Panel2 = new Guna.UI.WinForms.GunaGradient2Panel();
             this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
@@ -62,6 +58,10 @@
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaVScrollBar1 = new Guna.UI.WinForms.GunaVScrollBar();
             this.gunaVScrollBar2 = new Guna.UI.WinForms.GunaVScrollBar();
+            this.userControl21 = new market_automation.UserControl2();
+            this.userControl22 = new market_automation.UserControl2();
+            this.userControl23 = new market_automation.UserControl2();
+            this.userControl24 = new market_automation.UserControl2();
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             this.gunaGradient2Panel1.SuspendLayout();
@@ -123,6 +123,7 @@
             this.gunaGradientTileButton5.Size = new System.Drawing.Size(85, 71);
             this.gunaGradientTileButton5.TabIndex = 2;
             this.gunaGradientTileButton5.Text = "Snacks";
+            this.gunaGradientTileButton5.Click += new System.EventHandler(this.gunaGradientTileButton5_Click);
             // 
             // gunaGradientTileButton4
             // 
@@ -180,6 +181,7 @@
             this.gunaGradientTileButton3.Size = new System.Drawing.Size(85, 121);
             this.gunaGradientTileButton3.TabIndex = 3;
             this.gunaGradientTileButton3.Text = "Dairy Products";
+            this.gunaGradientTileButton3.Click += new System.EventHandler(this.gunaGradientTileButton3_Click);
             // 
             // gunaGradientTileButton2
             // 
@@ -208,6 +210,7 @@
             this.gunaGradientTileButton2.Size = new System.Drawing.Size(85, 60);
             this.gunaGradientTileButton2.TabIndex = 2;
             this.gunaGradientTileButton2.Text = "Healthy";
+            this.gunaGradientTileButton2.Click += new System.EventHandler(this.gunaGradientTileButton2_Click);
             // 
             // gunaGradientTileButton1
             // 
@@ -272,7 +275,6 @@
             this.gunaControlBox2.OnPressedColor = System.Drawing.Color.Black;
             this.gunaControlBox2.Size = new System.Drawing.Size(45, 29);
             this.gunaControlBox2.TabIndex = 2;
-            this.gunaControlBox2.Click += new System.EventHandler(this.gunaControlBox2_Click);
             // 
             // gunaControlBox3
             // 
@@ -337,6 +339,7 @@
             this.gunaAdvenceTileButton4.Size = new System.Drawing.Size(100, 62);
             this.gunaAdvenceTileButton4.TabIndex = 8;
             this.gunaAdvenceTileButton4.Text = "Tea";
+            this.gunaAdvenceTileButton4.Click += new System.EventHandler(this.gunaAdvenceTileButton4_Click);
             // 
             // gunaAdvenceTileButton3
             // 
@@ -369,6 +372,7 @@
             this.gunaAdvenceTileButton3.Size = new System.Drawing.Size(100, 62);
             this.gunaAdvenceTileButton3.TabIndex = 7;
             this.gunaAdvenceTileButton3.Text = "Coffie";
+            this.gunaAdvenceTileButton3.Click += new System.EventHandler(this.gunaAdvenceTileButton3_Click);
             // 
             // gunaAdvenceTileButton2
             // 
@@ -401,6 +405,7 @@
             this.gunaAdvenceTileButton2.Size = new System.Drawing.Size(100, 62);
             this.gunaAdvenceTileButton2.TabIndex = 6;
             this.gunaAdvenceTileButton2.Text = "Gaseous";
+            this.gunaAdvenceTileButton2.Click += new System.EventHandler(this.gunaAdvenceTileButton2_Click);
             // 
             // gunaAdvenceTileButton1
             // 
@@ -433,6 +438,7 @@
             this.gunaAdvenceTileButton1.Size = new System.Drawing.Size(100, 62);
             this.gunaAdvenceTileButton1.TabIndex = 5;
             this.gunaAdvenceTileButton1.Text = "Water";
+            this.gunaAdvenceTileButton1.Click += new System.EventHandler(this.gunaAdvenceTileButton1_Click);
             // 
             // flowLayoutPanel1
             // 
@@ -441,7 +447,6 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(607, 663);
             this.flowLayoutPanel1.TabIndex = 5;
-            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // notifyIcon1
             // 
@@ -458,38 +463,6 @@
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(298, 401);
             this.flowLayoutPanel2.TabIndex = 6;
-            // 
-            // userControl21
-            // 
-            this.userControl21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(155)))), ((int)(((byte)(123)))));
-            this.userControl21.Location = new System.Drawing.Point(3, 3);
-            this.userControl21.Name = "userControl21";
-            this.userControl21.Size = new System.Drawing.Size(299, 93);
-            this.userControl21.TabIndex = 0;
-            // 
-            // userControl22
-            // 
-            this.userControl22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(155)))), ((int)(((byte)(123)))));
-            this.userControl22.Location = new System.Drawing.Point(3, 102);
-            this.userControl22.Name = "userControl22";
-            this.userControl22.Size = new System.Drawing.Size(299, 93);
-            this.userControl22.TabIndex = 1;
-            // 
-            // userControl23
-            // 
-            this.userControl23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(155)))), ((int)(((byte)(123)))));
-            this.userControl23.Location = new System.Drawing.Point(3, 201);
-            this.userControl23.Name = "userControl23";
-            this.userControl23.Size = new System.Drawing.Size(299, 93);
-            this.userControl23.TabIndex = 2;
-            // 
-            // userControl24
-            // 
-            this.userControl24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(155)))), ((int)(((byte)(123)))));
-            this.userControl24.Location = new System.Drawing.Point(3, 300);
-            this.userControl24.Name = "userControl24";
-            this.userControl24.Size = new System.Drawing.Size(299, 93);
-            this.userControl24.TabIndex = 3;
             // 
             // gunaGradient2Panel2
             // 
@@ -614,6 +587,38 @@
             this.gunaVScrollBar2.ThumbColor = System.Drawing.Color.DimGray;
             this.gunaVScrollBar2.ThumbHoverColor = System.Drawing.Color.Gray;
             this.gunaVScrollBar2.ThumbPressedColor = System.Drawing.Color.DarkGray;
+            // 
+            // userControl21
+            // 
+            this.userControl21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(155)))), ((int)(((byte)(123)))));
+            this.userControl21.Location = new System.Drawing.Point(3, 3);
+            this.userControl21.Name = "userControl21";
+            this.userControl21.Size = new System.Drawing.Size(299, 93);
+            this.userControl21.TabIndex = 0;
+            // 
+            // userControl22
+            // 
+            this.userControl22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(155)))), ((int)(((byte)(123)))));
+            this.userControl22.Location = new System.Drawing.Point(3, 102);
+            this.userControl22.Name = "userControl22";
+            this.userControl22.Size = new System.Drawing.Size(299, 93);
+            this.userControl22.TabIndex = 1;
+            // 
+            // userControl23
+            // 
+            this.userControl23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(155)))), ((int)(((byte)(123)))));
+            this.userControl23.Location = new System.Drawing.Point(3, 201);
+            this.userControl23.Name = "userControl23";
+            this.userControl23.Size = new System.Drawing.Size(299, 93);
+            this.userControl23.TabIndex = 2;
+            // 
+            // userControl24
+            // 
+            this.userControl24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(155)))), ((int)(((byte)(123)))));
+            this.userControl24.Location = new System.Drawing.Point(3, 300);
+            this.userControl24.Name = "userControl24";
+            this.userControl24.Size = new System.Drawing.Size(299, 93);
+            this.userControl24.TabIndex = 3;
             // 
             // Form1
             // 
