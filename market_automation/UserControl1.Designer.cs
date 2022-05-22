@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl1));
             this.gunaGradient2Panel1 = new Guna.UI.WinForms.GunaGradient2Panel();
+            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLinePanel1 = new Guna.UI.WinForms.GunaLinePanel();
             this.gunaGradientButton1 = new Guna.UI.WinForms.GunaGradientButton();
-            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaGradient2Panel1.SuspendLayout();
             this.gunaShadowPanel1.SuspendLayout();
             this.gunaLinePanel1.SuspendLayout();
@@ -54,6 +54,16 @@
             this.gunaGradient2Panel1.Size = new System.Drawing.Size(66, 24);
             this.gunaGradient2Panel1.TabIndex = 0;
             // 
+            // gunaLabel3
+            // 
+            this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel3.Location = new System.Drawing.Point(16, 3);
+            this.gunaLabel3.Name = "gunaLabel3";
+            this.gunaLabel3.Size = new System.Drawing.Size(14, 15);
+            this.gunaLabel3.TabIndex = 2;
+            this.gunaLabel3.Text = "1";
+            // 
             // gunaLabel2
             // 
             this.gunaLabel2.AutoSize = true;
@@ -62,7 +72,7 @@
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(14, 15);
             this.gunaLabel2.TabIndex = 1;
-            this.gunaLabel2.Text = "$";
+            this.gunaLabel2.Text = "₺";
             // 
             // gunaShadowPanel1
             // 
@@ -78,10 +88,10 @@
             // gunaLabel1
             // 
             this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.Location = new System.Drawing.Point(41, 11);
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel1.Location = new System.Drawing.Point(10, 11);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(87, 15);
+            this.gunaLabel1.Size = new System.Drawing.Size(70, 12);
             this.gunaLabel1.TabIndex = 0;
             this.gunaLabel1.Text = "Bottled Water";
             // 
@@ -134,16 +144,6 @@
             this.gunaGradientButton1.TabIndex = 0;
             this.gunaGradientButton1.Visible = false;
             // 
-            // gunaLabel3
-            // 
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.Location = new System.Drawing.Point(16, 3);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(14, 15);
-            this.gunaLabel3.TabIndex = 2;
-            this.gunaLabel3.Text = "1";
-            // 
             // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -155,7 +155,6 @@
             this.Controls.Add(this.gunaLinePanel1);
             this.Name = "UserControl1";
             this.Size = new System.Drawing.Size(196, 207);
-            this.Load += new System.EventHandler(this.UserControl1_Load);
             this.Click += new System.EventHandler(this.UserControl1_Click);
             this.gunaGradient2Panel1.ResumeLayout(false);
             this.gunaGradient2Panel1.PerformLayout();

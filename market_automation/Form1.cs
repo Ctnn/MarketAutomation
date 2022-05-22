@@ -77,29 +77,36 @@ namespace market_automation
         
            
         }
-        public void getProduct(string type)
+        public List<UserControl1> getProduct(string type)
         {
 
             flowLayoutPanel1.Controls.Clear();
             ServerControl cs = new ServerControl();
             var result = cs.TakeInfo(type);
-
+            List<UserControl1> mylist = new List<UserControl1>();
             for (int i = 0; i < cs.count; i++)
             {
                 var tutucu = new UserControl1();
                 tutucu.nametag = result[i].Name;
                 tutucu.pricetag = result[i].Price;
+                tutucu.pathtag = result[i].Path;
+                mylist.Add(tutucu);
                 flowLayoutPanel1.Controls.Add(tutucu);
             }
+            for(int i=0; i<mylist.Count; i++)
+            {
+                MessageBox.Show(mylist[i].ToString());
+            }
+            return mylist;
 
         }
-        public void getProduct(string type,string submenu)
+        public List<UserControl1> getProduct(string type,string submenu)
         {
 
             flowLayoutPanel1.Controls.Clear();
             ServerControl cs = new ServerControl();
             var result = cs.TakeInfo(type);
-
+            List<UserControl1> mylist = new List<UserControl1>();
             for (int i = 0; i < cs.count; i++)
             {
                 if (result[i].ProductType == submenu)
@@ -107,10 +114,14 @@ namespace market_automation
                     var tutucu = new UserControl1();
                     tutucu.nametag = result[i].Name;
                     tutucu.pricetag = result[i].Price;
+                    tutucu.pathtag = result[i].Path;
+                    mylist.Add(tutucu);
                     flowLayoutPanel1.Controls.Add(tutucu);
                 }
-               
+           
             }
+            return mylist;
+
 
         }
         private void gunaGradientTileButton1_Click(object sender, EventArgs e)
@@ -123,7 +134,7 @@ namespace market_automation
             pathChanges(path1, path2, path3, path4);
             buttonChanges(true, true, true, true);
             buttonlabelChanges("Water", "Gaseous", "Coffie", "Tea");
-            getProduct(main_menu);
+            control = getProduct(main_menu);
 
            
 
@@ -136,25 +147,6 @@ namespace market_automation
             Guna.UI.Lib.ScrollBar.PanelScrollHelper flowpan2 = new Guna.UI.Lib.ScrollBar.PanelScrollHelper(flowLayoutPanel2, gunaVScrollBar2, true);
             main_menu = "drinks";
 
-            
-
-            //for(int i = 0; i < cs.count; i++)
-            //{
-
-            //    MessageBox.Show(cs.count.ToString());
-            //}
-
-
-
-
-
-
-
-
-            // flowLayoutPanel1.Controls.Add(deneme);
-
-
-
         }
 
         private void gunaGradientTileButton2_Click(object sender, EventArgs e)
@@ -165,7 +157,7 @@ namespace market_automation
             pathChanges(path1, path2);
             buttonChanges(true, true, false, false);
             buttonlabelChanges("Vegetable", "Fruit");
-            getProduct(main_menu);
+            control = getProduct(main_menu);
         }
 
         private void gunaAdvenceTileButton1_Click(object sender, EventArgs e)
@@ -193,6 +185,21 @@ namespace market_automation
             getProduct(main_menu, gunaAdvenceTileButton4.Text);
         }
 
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Enter(object sender, EventArgs e)
+        {
+            MessageBox.Show("a");
+        }
+
+        private void flowLayoutPanel1_Click(object sender, EventArgs e)
+        {
+          
+        }
+        List<UserControl1> control;
         private void gunaGradientTileButton3_Click(object sender, EventArgs e)
         {
             main_menu = "dairyproduct";
@@ -202,7 +209,7 @@ namespace market_automation
             pathChanges(path1, path2, path3);
             buttonChanges(true, true, true, false);
             buttonlabelChanges("Cheese", "Yogurt", "Milk");
-            getProduct(main_menu);
+           control=getProduct(main_menu);
         }
 
         private void gunaGradientTileButton4_Click(object sender, EventArgs e)
@@ -215,7 +222,7 @@ namespace market_automation
             pathChanges(path1,path2,path3,path4);
             buttonChanges(true, true, true, true);
             buttonlabelChanges("Egg", "Olive", "Meat", "Delicatessen");
-            getProduct(main_menu);
+            control = getProduct(main_menu);
         }
 
         private void gunaGradientTileButton5_Click(object sender, EventArgs e)
@@ -228,7 +235,7 @@ namespace market_automation
             pathChanges(path1, path2, path3, path4);
             buttonChanges(true, true, true, true);
             buttonlabelChanges("Chips", "Chocolate", "IceCream", "Biscuit");
-            getProduct(main_menu);
+            control = getProduct(main_menu);
         }
     }
 }

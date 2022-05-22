@@ -110,6 +110,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="icons\" />
+    <Folder Include="product_image\breakfast\" />
+    <Folder Include="product_image\dairyproduct\" />
+    <Folder Include="product_image\drinks\" />
+    <Folder Include="product_image\healthy\" />
+    <Folder Include="product_image\snacks\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

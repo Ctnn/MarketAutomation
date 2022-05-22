@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -56,27 +58,21 @@ namespace market_automation
                 gunaLabel3.Text = value;
             }
         }
-    /*    public string pathtag
+        public string pathtag
         {
             get
             {
-                return gunaLabel3.Text.ToString();
+                return null;
 
             }
 
             set
             {
-                gunaLabel3.Text = value;
+                
+                this.BackgroundImage = Image.FromFile(value);
+
+
             }
-        }*/
-        private void gunaLinePanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void UserControl1_Load(object sender, EventArgs e)
-        {
-   
         }
      
         private void UserControl1_Click(object sender, EventArgs e)
@@ -105,6 +101,11 @@ namespace market_automation
                 gunaGradientButton1.Visible = false;
                 gunaLinePanel1.Visible = false;
             }
+        }
+
+        private void gunaLinePanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
