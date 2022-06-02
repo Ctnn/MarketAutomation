@@ -37,6 +37,7 @@
       <HintPath>..\..\..\..\Desktop\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.OleDb, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -55,15 +56,69 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminYetki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminYetki.Designer.cs">
+      <DependentUpon>AdminYetki.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="KonumSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KonumSayfasi.Designer.cs">
+      <DependentUpon>KonumSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisEkrani.Designer.cs">
+      <DependentUpon>GirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odeme.Designer.cs">
+      <DependentUpon>Odeme.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="satinalmagecmis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satinalmagecmis.Designer.cs">
+      <DependentUpon>satinalmagecmis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SatisBelgesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatisBelgesi.Designer.cs">
+      <DependentUpon>SatisBelgesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KartSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KartSec.Designer.cs">
+      <DependentUpon>KartSec.cs</DependentUpon>
+    </Compile>
     <Compile Include="ServerControl.cs" />
+    <Compile Include="UrunKontrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunKontrol.Designer.cs">
+      <DependentUpon>UrunKontrol.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -76,8 +131,36 @@
     <Compile Include="UserControl2.Designer.cs">
       <DependentUpon>UserControl2.cs</DependentUpon>
     </Compile>
+    <Compile Include="KullaniciDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciDetay.Designer.cs">
+      <DependentUpon>KullaniciDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomePage.Designer.cs">
+      <DependentUpon>WelcomePage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminYetki.resx">
+      <DependentUpon>AdminYetki.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KonumSayfasi.resx">
+      <DependentUpon>KonumSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisEkrani.resx">
+      <DependentUpon>GirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odeme.resx">
+      <DependentUpon>Odeme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -87,12 +170,31 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="satinalmagecmis.resx">
+      <DependentUpon>satinalmagecmis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SatisBelgesi.resx">
+      <DependentUpon>SatisBelgesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KartSec.resx">
+      <DependentUpon>KartSec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunKontrol.resx">
+      <DependentUpon>UrunKontrol.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl2.resx">
       <DependentUpon>UserControl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciDetay.resx">
+      <DependentUpon>KullaniciDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomePage.resx">
+      <DependentUpon>WelcomePage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -115,6 +217,28 @@
     <Folder Include="product_image\drinks\" />
     <Folder Include="product_image\healthy\" />
     <Folder Include="product_image\snacks\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thesquid.ink-Free-Flat-Sample-Space-rocket-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

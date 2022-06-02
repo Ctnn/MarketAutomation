@@ -21,9 +21,7 @@ namespace market_automation
            
           
         }
-        private string us1_image;
-        private string us1_name=null;
-        private string us1_price;
+
        
 
         public UserControl1(string image,string name, string price)
@@ -58,20 +56,16 @@ namespace market_automation
                 gunaLabel3.Text = value;
             }
         }
+ 
         public string pathtag
         {
             get
             {
                 return null;
-
             }
-
             set
             {
-                
                 this.BackgroundImage = Image.FromFile(value);
-
-
             }
         }
      

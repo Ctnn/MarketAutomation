@@ -11,35 +11,35 @@ namespace market_automation
     {
         public class MyData
         {
-            public string Name { get; set; }
-            public string Price { get; set; }
-            public string Path { get; set; }
-            public string ProductType { get; set; }
+            public string Isim { get; set; }
+            public string Fiyat { get; set; }
+            public string Uzantı { get; set; }
+            public string UrunTipi { get; set; }
         }
-        public int count=0;
+        public int sayim=0;
         
-        static string connection_str = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\yigit\source\repos\market_automation\market_automation\bin\Debug\my_datebase.accdb";
-           public List<MyData> TakeInfo(string product_type)
+        public static string baglanti_string = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\yigit\source\repos\market_automation\market_automation\bin\Debug\my_datebase.accdb";
+           public List<MyData> BilgiAl(string urun_tipi)
         {
-            OleDbConnection connection = new OleDbConnection(connection_str);
-            OleDbCommand cmd =connection.CreateCommand();
-            connection.Open();
-            OleDbCommand data= new OleDbCommand("select * from "+product_type , connection);
-            OleDbDataReader read = data.ExecuteReader();
+            OleDbConnection baglanti = new OleDbConnection(baglanti_string);
+            OleDbCommand komut =baglanti.CreateCommand();
+            baglanti.Open();
+            OleDbCommand bilgi= new OleDbCommand("select * from "+urun_tipi , baglanti);
+            OleDbDataReader oku = bilgi.ExecuteReader();
             List<MyData> list = new List<MyData>();
-            while (read.Read())
+            while (oku.Read())
             {
                 MyData list_data = new MyData();
-                list_data.Name = (string)read["product_name"];
-                list_data.Price = (string)read["product_price"];
-                list_data.Path = (string)read["product_image"];
-                list_data.ProductType = (string)read["product_type"];
+                list_data.Isim = (string)oku["urun_ad"];
+                list_data.Fiyat = (string)oku["urun_fiyat"];
+                list_data.Uzantı = (string)oku["urun_resim"];
+                list_data.UrunTipi = (string)oku["urun_tip"];
                 list.Add(list_data);
-                count++;
-
+                sayim++;
             }
-            connection.Close();
+            baglanti.Close();
             return list;
         }
+
     }
 }
