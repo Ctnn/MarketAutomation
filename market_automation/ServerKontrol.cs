@@ -7,7 +7,7 @@ using System.Data.OleDb;
 namespace market_automation
 {
     
-    public class ServerControl
+    public class ServerKontrol
     {
         public class MyData
         {

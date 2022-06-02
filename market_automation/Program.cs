@@ -16,7 +16,7 @@ namespace market_automation
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new WelcomePage());
+            Application.Run(new HosgeldinizSayfasi());
         }
     }
 }

@@ -155,6 +155,7 @@
             this.Controls.Add(this.gunaLinePanel1);
             this.Name = "UserControl1";
             this.Size = new System.Drawing.Size(196, 207);
+            this.Load += new System.EventHandler(this.UserControl1_Load);
             this.Click += new System.EventHandler(this.UserControl1_Click);
             this.gunaGradient2Panel1.ResumeLayout(false);
             this.gunaGradient2Panel1.PerformLayout();

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace market_automation
 {
-    public partial class WelcomePage : Form
+    public partial class HosgeldinizSayfasi : Form
     {
-        public WelcomePage()
+        public HosgeldinizSayfasi()
         {
             InitializeComponent();
         }

@@ -24,7 +24,7 @@ namespace market_automation
             gunaLabel5.Text = KartSec.secilen_kart;
             gunaLabel2.Text = Form1.toplam_fiyat.ToString();
         }
-        OleDbConnection baglanti = new OleDbConnection(ServerControl.baglanti_string);
+        OleDbConnection baglanti = new OleDbConnection(ServerKontrol.baglanti_string);
         private void gunaButton2_Click(object sender, EventArgs e)
         {
             var kontrol =gunaLabel2.Text!=null||gunaLabel5.Text!=null||gunaLabel6.Text!=null;

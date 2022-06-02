@@ -44,9 +44,9 @@
             this.gunaLabel1.Font = new System.Drawing.Font("Times New Roman", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.gunaLabel1.Location = new System.Drawing.Point(57, 22);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(47, 14);
+            this.gunaLabel1.Size = new System.Drawing.Size(56, 14);
             this.gunaLabel1.TabIndex = 1;
-            this.gunaLabel1.Text = "Su Şişesi";
+            this.gunaLabel1.Text = "URUN AD";
             // 
             // gunaLabel2
             // 

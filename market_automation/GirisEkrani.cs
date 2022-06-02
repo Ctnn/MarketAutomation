@@ -60,14 +60,14 @@ namespace market_automation
 
         private void gunaCirclePictureBox1_Click(object sender, EventArgs e)
         {
-            WelcomePage wel = new WelcomePage();
+            HosgeldinizSayfasi wel = new HosgeldinizSayfasi();
             wel.Show();
             this.Close();   
         }
 
         private void gunaButton1_Click(object sender, EventArgs e)
         {
-            if(WelcomePage.rank.Equals("musteri"))
+            if(HosgeldinizSayfasi.rank.Equals("musteri"))
             {
 
             
@@ -131,7 +131,7 @@ namespace market_automation
             gunaShadowPanel2.Visible = false;
             
             gunaComboBox1.SelectedIndex = 0;
-            if(WelcomePage.rank.Equals("yetkili"))
+            if(HosgeldinizSayfasi.rank.Equals("yetkili"))
             {
                 gunaButton2.Visible = false;
                 gunaLinkLabel1.Visible = false;

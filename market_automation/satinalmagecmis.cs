@@ -24,7 +24,7 @@ namespace market_automation
             this.Hide();
             git.Show();
         }
-        OleDbConnection connection = new OleDbConnection(ServerControl.baglanti_string);
+        OleDbConnection connection = new OleDbConnection(ServerKontrol.baglanti_string);
         private void satinalmagecmis_Load(object sender, EventArgs e)
         {
             gunaDataGridView1.Rows.Clear();

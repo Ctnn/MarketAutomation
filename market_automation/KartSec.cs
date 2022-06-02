@@ -17,7 +17,7 @@ namespace market_automation
         {
             InitializeComponent();
         }
-        OleDbConnection baglanti = new OleDbConnection(ServerControl.baglanti_string);
+        OleDbConnection baglanti = new OleDbConnection(ServerKontrol.baglanti_string);
         private void SelectCard_Load(object sender, EventArgs e)
         {
             checkedListBox1.Items.Clear();

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KartSec));
             this.gunaControlBox6 = new Guna.UI.WinForms.GunaControlBox();
             this.gunaShadowPanel2 = new Guna.UI.WinForms.GunaShadowPanel();
@@ -36,6 +37,7 @@
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.gunaShadowPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -130,6 +132,10 @@
             this.gunaLabel1.TabIndex = 38;
             this.gunaLabel1.Text = "KREDİ/BANKA KARTI BİLGİ";
             // 
+            // gunaDragControl1
+            // 
+            this.gunaDragControl1.TargetControl = this;
+            // 
             // KartSec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -160,5 +166,6 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
+        private Guna.UI.WinForms.GunaDragControl gunaDragControl1;
     }
 }

@@ -40,7 +40,7 @@ namespace market_automation
             baglanti.Close();
         }
 
-        OleDbConnection baglanti = new OleDbConnection(ServerControl.baglanti_string);
+        OleDbConnection baglanti = new OleDbConnection(ServerKontrol.baglanti_string);
         private void gunaButton1_Click(object sender, EventArgs e)
         {
             urunListele("icecek");

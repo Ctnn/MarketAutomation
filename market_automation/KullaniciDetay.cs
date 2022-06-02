@@ -18,7 +18,7 @@ namespace market_automation
         {
             InitializeComponent();
         }
-        OleDbConnection connection = new OleDbConnection(ServerControl.baglanti_string);
+        OleDbConnection connection = new OleDbConnection(ServerKontrol.baglanti_string);
         private void UserDetail_Load(object sender, EventArgs e)
         {
             gunaDataGridView1.Rows.Clear();
@@ -91,7 +91,7 @@ namespace market_automation
             connection.Open();
             if (System.Windows.MessageBox.Show("Bu kişiyi silmek istediğinize emin misiniz ? ", "Soru", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
             {
-                OleDbCommand veri = new OleDbCommand("delete from userinfo where userID=" + Convert.ToInt32(gunaTextBox3.Text), connection);
+                OleDbCommand veri = new OleDbCommand("delete from kullanicibilgi where ID=" + Convert.ToInt32(gunaTextBox3.Text), connection);
                 veri.ExecuteNonQuery();
                 System.Windows.MessageBox.Show("Üye başarıyla silinmiştir.");
                 connection.Close();

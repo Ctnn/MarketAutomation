@@ -97,7 +97,7 @@ namespace market_automation
         {
   
             flowLayoutPanel1.Controls.Clear();
-            ServerControl cs = new ServerControl();
+            ServerKontrol cs = new ServerKontrol();
             var result = cs.BilgiAl(urun_tip);
             List<UserControl1> mylist = new List<UserControl1>();
             for (int i = 0; i < cs.sayim; i++)
@@ -119,7 +119,7 @@ namespace market_automation
         {
            
             flowLayoutPanel1.Controls.Clear();
-            ServerControl cs = new ServerControl();
+            ServerKontrol cs = new ServerKontrol();
             var result = cs.BilgiAl(urun_tipi);
             List<UserControl1> mylist = new List<UserControl1>();
             for (int i = 0; i < cs.sayim; i++)

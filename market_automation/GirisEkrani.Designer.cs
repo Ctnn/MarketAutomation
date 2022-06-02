@@ -420,11 +420,11 @@
             this.Giriş.AutoSize = true;
             this.Giriş.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Giriş.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(35)))), ((int)(((byte)(80)))));
-            this.Giriş.Location = new System.Drawing.Point(174, 466);
+            this.Giriş.Location = new System.Drawing.Point(156, 464);
             this.Giriş.Name = "Giriş";
-            this.Giriş.Size = new System.Drawing.Size(57, 20);
+            this.Giriş.Size = new System.Drawing.Size(83, 20);
             this.Giriş.TabIndex = 11;
-            this.Giriş.Text = "LOGIN";
+            this.Giriş.Text = "GİRİŞ YAP";
             this.Giriş.Click += new System.EventHandler(this.gunaLabel4_Click);
             // 
             // gunaTextBox7

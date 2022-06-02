@@ -17,9 +17,11 @@ namespace market_automation
         {
             InitializeComponent();
         }
-        OleDbConnection connection = new OleDbConnection(ServerControl.baglanti_string);
+        OleDbConnection connection = new OleDbConnection(ServerKontrol.baglanti_string);
         private void Location_Load(object sender, EventArgs e)
         {
+            gunaShadowPanel2.Visible = false;
+            gunaShadowPanel1.Visible = true;
             checkedListBox1.Items.Clear();
             connection.Open();
             OleDbCommand data = new OleDbCommand("select * from evbilgisi where userID='"+GirisEkrani.ID+"'", connection);
@@ -37,8 +39,8 @@ namespace market_automation
 
         private void gunaButton2_Click(object sender, EventArgs e)
         {
-            gunaShadowPanel2.Visible = false;
             gunaShadowPanel2.Visible = true;
+            gunaShadowPanel2.Visible = false;
         }
         public static string ev_konum;
 
@@ -56,7 +58,7 @@ namespace market_automation
 
         private void gunaButton1_Click(object sender, EventArgs e)
         {
-            if(gunaTextBox1.Text.Equals(null) && gunaTextBox2.Text.Equals(null) && gunaTextBox3.Text.Equals(null) && gunaTextBox4.Text.Equals(null) && gunaTextBox5.Text.Equals(null) && gunaTextBox6.Text.Equals(null) && gunaTextBox7.Text.Equals(null))
+            if(gunaTextBox1.Text!=null && gunaTextBox2.Text != null && gunaTextBox3.Text != null && gunaTextBox4.Text != null && gunaTextBox5.Text != null && gunaTextBox6.Text != null && gunaTextBox7.Text != null)
             { 
             using (connection)
             {
@@ -80,8 +82,8 @@ namespace market_automation
                 
                 connection.Close();
                 Location_Load(sender, e);
-                gunaShadowPanel2.Visible = true;
                 gunaShadowPanel2.Visible = false;
+                gunaShadowPanel2.Visible = true;
                 this.Close();
             }
             }
@@ -93,8 +95,8 @@ namespace market_automation
 
         private void gunaCirclePictureBox1_Click(object sender, EventArgs e)
         {
-            gunaShadowPanel2.Visible = true;
             gunaShadowPanel2.Visible = false;
+            gunaShadowPanel2.Visible = true;
         }
 
         private void gunaShadowPanel2_Paint(object sender, PaintEventArgs e)

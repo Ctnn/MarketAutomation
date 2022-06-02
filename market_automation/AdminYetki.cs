@@ -18,7 +18,7 @@ namespace market_automation
         {
             InitializeComponent();
         }
-        OleDbConnection baglanti = new OleDbConnection(ServerControl.baglanti_string);
+        OleDbConnection baglanti = new OleDbConnection(ServerKontrol.baglanti_string);
         private void adminperm_Load(object sender, EventArgs e)
         {
             gunaDataGridView1.Rows.Clear();

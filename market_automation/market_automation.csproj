@@ -112,7 +112,7 @@
     <Compile Include="KartSec.Designer.cs">
       <DependentUpon>KartSec.cs</DependentUpon>
     </Compile>
-    <Compile Include="ServerControl.cs" />
+    <Compile Include="ServerKontrol.cs" />
     <Compile Include="UrunKontrol.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,11 +137,11 @@
     <Compile Include="KullaniciDetay.Designer.cs">
       <DependentUpon>KullaniciDetay.cs</DependentUpon>
     </Compile>
-    <Compile Include="WelcomePage.cs">
+    <Compile Include="HosgeldinizSayfasi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WelcomePage.Designer.cs">
-      <DependentUpon>WelcomePage.cs</DependentUpon>
+    <Compile Include="HosgeldinizSayfasi.Designer.cs">
+      <DependentUpon>HosgeldinizSayfasi.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AdminPanel.resx">
       <DependentUpon>AdminPanel.cs</DependentUpon>
@@ -193,8 +193,8 @@
     <EmbeddedResource Include="KullaniciDetay.resx">
       <DependentUpon>KullaniciDetay.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WelcomePage.resx">
-      <DependentUpon>WelcomePage.cs</DependentUpon>
+    <EmbeddedResource Include="HosgeldinizSayfasi.resx">
+      <DependentUpon>HosgeldinizSayfasi.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

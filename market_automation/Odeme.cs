@@ -23,7 +23,7 @@ namespace market_automation
         {
           
         }
-        OleDbConnection connection = new OleDbConnection(ServerControl.baglanti_string);
+        OleDbConnection connection = new OleDbConnection(ServerKontrol.baglanti_string);
         private void gunaGradientTileButton1_Click(object sender, EventArgs e)
         {
             if(gunaTextBox1.Text==null||maskedTextBox1.MaskFull == false|| maskedTextBox2.MaskFull == false || maskedTextBox3.MaskFull == false  || gunaCheckBox1.Enabled== false)
@@ -38,7 +38,7 @@ namespace market_automation
                 {
                     connection.Open();
 
-                    OleDbCommand cmd1 = new OleDbCommand("INSERT INTO [odemebilgileri] " + "([userID],[kart_numarasi],[kart_tarih],[kart_adi],[cvc_kodu]) " + "VALUES(@value1,@value2,@value3,@value4,@value5)", connection);
+                    OleDbCommand cmd1 = new OleDbCommand("INSERT INTO [odemebilgileri] " + "([userID],[kart_adi],[kart_numarasi],[kart_tarih],[cvc_kodu]) " + "VALUES(@value1,@value2,@value3,@value4,@value5)", connection);
                     cmd1.Parameters.AddWithValue("@value1", GirisEkrani.ID);
                     cmd1.Parameters.AddWithValue("@value2", gunaTextBox1.Text);
                     cmd1.Parameters.AddWithValue("@value3", maskedTextBox1.Text);
