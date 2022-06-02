@@ -155,7 +155,7 @@ namespace market_automation
              tutucu.fiyatetiketi = ((UserControl1)sender).pricetag.ToString();
              mylist2.Add(tutucu);
              flowLayoutPanel2.Controls.Add(tutucu);
-            tutucum2 = tutucu;
+
              toplam_fiyat= toplam_fiyat +Convert.ToInt32(tutucu.fiyatetiketi);
 
             gecmis_adtutucu.Add(tutucu.isimetiketi.ToString());
